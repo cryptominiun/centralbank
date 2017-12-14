@@ -14,11 +14,11 @@ print your own money / cryptocurrency; run your own federated central bank nodes
 ## Development 
 
 For local development - clone or downloand (and unzip) the centralbank code repo.
-
-
-Next install all dependencies. Add a Gemfile e.g.:
+Next install all dependencies using bundler and a Gemfile e.g.:
 
 ``` ruby
+# Gemfile
+
 source "https://rubygems.org"
 
 gem 'sinatra'
@@ -27,12 +27,14 @@ gem 'sinatra'
 run
 
 ```
-$ bundle
+$ bundle       ## will use the Gemfile (see above)
 ```
 
 and now you're ready to run your own centralbank server node. Use the [`config.ru`](config.ru) script for rack:
 
 ``` ruby
+# config.ru
+
 $LOAD_PATH << './lib'
 
 require 'centralbank'
@@ -43,7 +45,7 @@ run Centralbank::Service
 and startup the money printing machine using rackup - the rack command line tool:
 
 ```
-$ rackup       ## will use the config.ru (rackup configuration script).
+$ rackup       ## will use the config.ru - rackup configuration script (see above).
 ```
 
 In your browser open up the page e.g. `http://localhost:9292`. Voila!
