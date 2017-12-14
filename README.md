@@ -13,8 +13,8 @@ print your own money / cryptocurrency; run your own federated central bank nodes
 
 ## Development 
 
-For local development - clone or downloand (and unzip) the centralbank code repo.
-Next install all dependencies using bundler and a Gemfile e.g.:
+For local development - clone or download (and unzip) the centralbank code repo.
+Next install all dependencies using bundler with a Gemfile e.g.:
 
 ``` ruby
 # Gemfile
