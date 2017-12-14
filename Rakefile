@@ -1,0 +1,30 @@
+require 'hoe'
+require './lib/centralbank/version.rb'
+
+Hoe.spec 'centralbank' do
+
+  self.version = Centralbank::VERSION
+
+  self.summary = 'centralbank - print your own money / cryptocurrency; run your own federated central bank nodes on the blockchain peer-to-peer over HTTP; revolutionize the world one block at a time'
+  self.description = summary
+
+  self.urls    = ['https://github.com/openblockchains/centralbank']
+
+  self.author  = 'Gerald Bauer'
+  self.email   = 'ruby-talk@ruby-lang.org'
+
+  # switch extension to .markdown for gihub formatting
+  self.readme_file  = 'README.md'
+  self.history_file = 'History.md'
+
+  self.extra_deps = [
+    ['sinatra', '>=2.0']
+  ]
+
+  self.licenses = ['Public Domain']
+
+  self.spec_extras = {
+   required_ruby_version: '>= 2.3'
+  }
+
+end

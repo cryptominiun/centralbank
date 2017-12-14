@@ -1,3 +1,17 @@
+###########
+#  cached / saved state / data
+
+data.json
+
+
+##########
+#  ignore Gemfile and  Gemfile.lock for now
+
+Gemfile
+Gemfile.lock
+
+
+
 *.gem
 *.rbc
 /.config
